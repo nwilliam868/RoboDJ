@@ -99,7 +99,7 @@ for ctr in range(150):
                 t1 = random.randrange(sampst)
                 t2 = (t1 + samplen)
                 newAudio = newAudio[t1:t2]
-            newvol = random.randrange(14,18)
+            newvol = random.randrange(16,20)
             newAudio = newAudio - newvol
             newAudio = newAudio.fade_in(100)
             newAudio = newAudio.fade_out(100)
@@ -114,7 +114,7 @@ for ctr in range(150):
                 t1 = random.randrange(sampst)
                 t2 = (t1 + samplen)
                 newAudio = newAudio[t1:t2]
-            newvol = random.randrange(14,18)
+            newvol = random.randrange(16,20)
             newAudio = newAudio - newvol
             newAudio = newAudio.fade_in(3000)
             newAudio = newAudio.fade_out(3000)
@@ -131,7 +131,7 @@ for ctr in range(150):
                 t1 = random.randrange(sampst)
                 t2 = (t1 + samplen)
                 newAudio = newAudio[t1:t2]
-            newvol = random.randrange(10,14)
+            newvol = random.randrange(16,20)
             newAudio = newAudio - newvol
             newAudio = newAudio.fade_in(3000)
             newAudio = newAudio.fade_out(3000)
@@ -148,7 +148,7 @@ for ctr in range(150):
                 t1 = random.randrange(sampst)
                 t2 = (t1 + samplen)
                 newAudio = newAudio[t1:t2]
-            newvol = random.randrange(14,18)
+            newvol = random.randrange(16,20)
             newAudio = newAudio - newvol
             newAudio = newAudio.fade_in(10)
             newAudio = newAudio.fade_out(10)
@@ -200,7 +200,7 @@ for ctr in range(250):
                 t1 = random.randrange(sampst)
                 t2 = (t1 + samplen)
                 newAudio = newAudio[t1:t2]
-            newvol = random.randrange(14,18)
+            newvol = random.randrange(18,22)
             newAudio = newAudio - newvol
             newAudio = newAudio.fade_in(100)
             newAudio = newAudio.fade_out(100)
@@ -215,7 +215,7 @@ for ctr in range(250):
                 t1 = random.randrange(sampst)
                 t2 = (t1 + samplen)
                 newAudio = newAudio[t1:t2]
-            newvol = random.randrange(14,18)
+            newvol = random.randrange(18,22)
             newAudio = newAudio - newvol
             newAudio = newAudio.fade_in(3000)
             newAudio = newAudio.fade_out(3000)
@@ -232,7 +232,7 @@ for ctr in range(250):
                 t1 = random.randrange(sampst)
                 t2 = (t1 + samplen)
                 newAudio = newAudio[t1:t2]
-            newvol = random.randrange(10,14)
+            newvol = random.randrange(18,22)
             newAudio = newAudio - newvol
             newAudio = newAudio.fade_in(3000)
             newAudio = newAudio.fade_out(3000)
@@ -249,7 +249,7 @@ for ctr in range(250):
                 t1 = random.randrange(sampst)
                 t2 = (t1 + samplen)
                 newAudio = newAudio[t1:t2]
-            newvol = random.randrange(14,18)
+            newvol = random.randrange(18,22)
             newAudio = newAudio - newvol
             newAudio = newAudio.fade_in(10)
             newAudio = newAudio.fade_out(10)

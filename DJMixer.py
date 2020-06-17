@@ -146,10 +146,20 @@ def make_player():
     atrack14 = contentpepper[atracknum14]
     atracknum15 = random.randrange(0,len(contentpepper))
     atrack15 = contentpepper[atracknum15]
+    atracknum16 = random.randrange(0,len(contentpepper))
+    atrack16 = contentpepper[atracknum16]
+    atracknum17 = random.randrange(0,len(contentpepper))
+    atrack17 = contentpepper[atracknum1]
+    atracknum18 = random.randrange(0,len(contentpepper))
+    atrack18 = contentpepper[atracknum1]
+    atracknum19 = random.randrange(0,len(contentpepper))
+    atrack19 = contentpepper[atracknum19]
+    atracknum20 = random.randrange(0,len(contentpepper))
+    atrack20 = contentpepper[atracknum20]
     
     
 
-    return render_template('reanimate.html', toplay1 = atrack1, toplay2 = atrack2, toplay3 = atrack3, toplay4 = atrack4, toplay5 = atrack5, toplay6 = atrack6, toplay7 = atrack7, toplay8 = atrack8, toplay9 = atrack9, toplay10 = atrack10, toplay11 = atrack11, toplay12 = atrack12, toplay13 = atrack13, toplay14 = atrack14, toplay15 = atrack15, songlen = songlength )
+    return render_template('reanimate.html', toplay1 = atrack1, toplay2 = atrack2, toplay3 = atrack3, toplay4 = atrack4, toplay5 = atrack5, toplay6 = atrack6, toplay7 = atrack7, toplay8 = atrack8, toplay9 = atrack9, toplay10 = atrack10, toplay11 = atrack11, toplay12 = atrack12, toplay13 = atrack13, toplay14 = atrack14, toplay15 = atrack15,  toplay16 = atrack16, toplay17 = atrack17, toplay18 = atrack18, toplay19 = atrack19, toplay20 = atrack20, songlen = songlength )
 
 webbrowser.open('http://localhost:5000')
 
