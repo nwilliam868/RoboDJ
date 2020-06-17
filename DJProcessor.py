@@ -49,7 +49,7 @@ print("Extracting samples. Please wait.")
 
 print("")
 
-for ctr in range(100):
+for ctr in range(50):
 
     astr = ("Beat Sample: " + str(ctr + 1))
     print(astr)
@@ -75,7 +75,7 @@ for ctr in range(100):
     except:
         print("File unreadable.")
 
-for ctr in range(200):
+for ctr in range(150):
 
     astr = ("Drone Sample: " + str(ctr + 1))
     print(astr)
@@ -176,7 +176,7 @@ for ctr in range(200):
     except:
         print("File unreadable.")
 
-for ctr in range(200):
+for ctr in range(250):
 
     astr = ("Other Sample: " + str(ctr + 1))
     print(astr)
@@ -277,7 +277,7 @@ for ctr in range(200):
     except:
         print("File unreadable.")
 
-for ctr in range(50):
+for ctr in range(30):
 
     astr = ("Bass Sample: " + str(ctr + 1))
     print(astr)

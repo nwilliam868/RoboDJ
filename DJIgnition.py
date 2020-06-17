@@ -26,7 +26,7 @@ for subdir, dirs, files in os.walk(srchstr):
         if  filepath.endswith(".wav") and (("Pad" in str(filepath)) or ("Drone" in str(filepath))) :
             contentdrones.append(filepath)
 
-        if  filepath.endswith(".wav") and "Bass" in str(filepath):
+        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Jazz" in str(filepath)):
             contentbass.append(filepath)
 
         if  filepath.endswith(".wav") and (("Pad" not in str(filepath)) and ("Drone" not in str(filepath)) and ("Beat" not in str(filepath)) and ("Drum" not in str(filepath))and ("Bass" not in str(filepath))) :
@@ -51,7 +51,7 @@ for ctr in range(80):
 
 x = len(contentdrones)
 
-for ctr in range(80):
+for ctr in range(120):
     y = random.randrange(x)
     atrack = contentdrones[y]
     trackname = atrack[-20:-4]
@@ -64,7 +64,7 @@ for ctr in range(80):
 
 x = len(contentpepper)
 
-for ctr in range(80):
+for ctr in range(150):
     y = random.randrange(x)
     atrack = contentpepper[y]
     trackname = atrack[-20:-4]
@@ -77,7 +77,7 @@ for ctr in range(80):
 
 x = len(contentbass)
 
-for ctr in range(80):
+for ctr in range(50):
     y = random.randrange(x)
     atrack = contentbass[y]
     trackname = atrack[-20:-4]
