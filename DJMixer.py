@@ -120,32 +120,32 @@ def make_player():
     atrack1 = contentbeats[atracknum1]
     atracknum2 = random.randrange(0,len(contentbass))
     atrack2 = contentbass[atracknum2]
-    atracknum15 = random.randrange(0,len(contentdrones))
-    atrack15 = contentdrones[atracknum15]
     atracknum3 = random.randrange(0,len(contentdrones))
     atrack3 = contentdrones[atracknum3]
     atracknum4 = random.randrange(0,len(contentdrones))
     atrack4 = contentdrones[atracknum4]
     atracknum5 = random.randrange(0,len(contentdrones))
     atrack5 = contentdrones[atracknum5]
-    atracknum6 = random.randrange(0,len(contentpepper))
-    atrack6 = contentpepper[atracknum6]
+    atracknum6 = random.randrange(0,len(contentdrones))
+    atrack6 = contentdrones[atracknum6]
     atracknum7 = random.randrange(0,len(contentpepper))
     atrack7 = contentpepper[atracknum7]
     atracknum8 = random.randrange(0,len(contentpepper))
     atrack8 = contentpepper[atracknum8]
-    atracknum9 = random.randrange(0,len(contentdrones))
-    atrack9 = contentdrones[atracknum9]
-    atracknum10 = random.randrange(0,len(contentdrones))
-    atrack10 = contentdrones[atracknum10]
-    atracknum11 = random.randrange(0,len(contentdrones))
-    atrack11 = contentdrones[atracknum11]
+    atracknum9 = random.randrange(0,len(contentpepper))
+    atrack9 = contentpepper[atracknum9]
+    atracknum10 = random.randrange(0,len(contentpepper))
+    atrack10 = contentpepper[atracknum10]
+    atracknum11 = random.randrange(0,len(contentpepper))
+    atrack11 = contentpepper[atracknum11]
     atracknum12 = random.randrange(0,len(contentpepper))
     atrack12 = contentpepper[atracknum12]
     atracknum13 = random.randrange(0,len(contentpepper))
     atrack13 = contentpepper[atracknum13]
     atracknum14 = random.randrange(0,len(contentpepper))
     atrack14 = contentpepper[atracknum14]
+    atracknum15 = random.randrange(0,len(contentpepper))
+    atrack15 = contentpepper[atracknum15]
     
     
 
