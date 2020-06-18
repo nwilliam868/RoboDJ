@@ -14,6 +14,7 @@ contentbeats = []
 contentdrones = []
 contentpepper = []
 contentbass = []
+contentgit = []
 
 for subdir, dirs, files in os.walk(srchstr):
     for file in files:
@@ -29,7 +30,10 @@ for subdir, dirs, files in os.walk(srchstr):
         if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Jazz" in str(filepath)):
             contentbass.append(filepath)
 
-        if  filepath.endswith(".wav") and (("Pad" not in str(filepath)) and ("Drone" not in str(filepath)) and ("Beat" not in str(filepath)) and ("Drum" not in str(filepath))and ("Bass" not in str(filepath)) and ("Tone" not in str(filepath)) and ("OS" not in str(filepath)) and ("Signals" not in str(filepath))  and ("Dialog" not in str(filepath)) and ("Spoken" not in str(filepath))) :
+        if  filepath.endswith(".wav") and ("Guitar" in str(filepath)) and ("MM" not in str(filepath)):
+            contentbass.append(filepath)
+
+        if  filepath.endswith(".wav") and (("Pad" not in str(filepath)) and ("Drone" not in str(filepath)) and ("Beat" not in str(filepath)) and ("Drum" not in str(filepath))and ("Bass" not in str(filepath)) and ("Tone" not in str(filepath)) and ("OS" not in str(filepath)) and ("Signals" not in str(filepath))  and ("Dialog" not in str(filepath)) and ("Spoken" not in str(filepath)) and ("Guitar" not in str(filepath))) :
             contentpepper.append(filepath)
 
 print("")
@@ -87,6 +91,19 @@ for ctr in range(50):
             tracknam += m
     outstr = 'C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\newsoundbass' + str(ctr) + tracknam + ".wav"
     shutil.copy(contentbass[y], outstr)
+
+x = len(contentgit)
+
+for ctr in range(100):
+    y = random.randrange(x)
+    atrack = contentgit[y]
+    trackname = atrack[-20:-4]
+    tracknam = ""
+    for m in trackname:
+        if m.isalnum():
+            tracknam += m
+    outstr = 'C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\newsoundguitar' + str(ctr) + tracknam + ".wav"
+    shutil.copy(contentgit[y], outstr)
 
 call(["python", "DJProcessor.py"])
 

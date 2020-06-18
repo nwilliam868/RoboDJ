@@ -74,6 +74,19 @@ def make_player():
 
     outfile.close()
 
+    outfile = open('AutoPlayListGit.m3u', "w")
+
+    for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static'):
+        for file in files:
+            filepath = subdir + os.sep + file
+
+            if (filepath.endswith(".mp3") or filepath.endswith(".wav") or filepath.endswith(".ogg")) and "guitar" in str(filepath):
+                cline = str(os.sep + file)
+                bline = "\static" + cline
+                outfile.write(bline + '\n')
+
+    outfile.close()
+
     songlength = random.randrange(500, 600)
 
     infile = open("AutoPlayListBeats.m3u", "r")
@@ -116,12 +129,22 @@ def make_player():
         plist = infile.readline()
     infile.close()
 
+    infile = open("AutoPlayListGit.m3u", "r")
+   
+    contentgit = []
+
+    plist = infile.readline()
+    while plist:
+        contentgit.append(plist)
+        plist = infile.readline()
+    infile.close()
+
     atracknum1 = random.randrange(0,len(contentbeats))
     atrack1 = contentbeats[atracknum1]
     atracknum2 = random.randrange(0,len(contentbass))
     atrack2 = contentbass[atracknum2]
-    atracknum3 = random.randrange(0,len(contentdrones))
-    atrack3 = contentdrones[atracknum3]
+    atracknum3 = random.randrange(0,len(contentgit))
+    atrack3 = contentgit[atracknum3]
     atracknum4 = random.randrange(0,len(contentdrones))
     atrack4 = contentdrones[atracknum4]
     atracknum5 = random.randrange(0,len(contentdrones))

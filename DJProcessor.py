@@ -45,6 +45,16 @@ for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\R
             cline = str(file)
             contentbass.append(cline)
 
+contentgit = []
+
+for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\'):
+    for file in files:
+        filepath = subdir + os.sep + file
+
+        if filepath.endswith(".wav") and ("newsample" not in str(filepath)) and "guitar" in str(filepath):
+            cline = str(file)
+            contentgit.append(cline)
+
 print("Extracting samples. Please wait.")
 
 print("")
@@ -299,6 +309,32 @@ for ctr in range(30):
         newAudio = newAudio.fade_out(10)
         
         oufil = "C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static\\newsamplebass" + tracknam + str(ctr) + ".wav"
+        newAudio.export(oufil, format="wav")
+    except:
+        print("File unreadable.")
+
+for ctr in range(150):
+
+    astr = ("Guitar Sample: " + str(ctr + 1))
+    print(astr)
+        
+    songch = random.randrange(0,len(contentgit))
+    atrack = contentgit[songch]
+    trackname = atrack[-16:]
+    tracknam = ""
+    for x in trackname:
+        if x.isalnum():
+            tracknam += x
+
+    try:
+        newAudio = AudioSegment.from_wav(atrack)
+        
+        newvol = random.randrange(14,18)
+        newAudio = newAudio - newvol
+        newAudio = newAudio.fade_in(10)
+        newAudio = newAudio.fade_out(10)
+        
+        oufil = "C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static\\newsampleguitar" + tracknam + str(ctr) + ".wav"
         newAudio.export(oufil, format="wav")
     except:
         print("File unreadable.")
