@@ -141,10 +141,10 @@ def make_player():
 
     atracknum1 = random.randrange(0,len(contentbeats))
     atrack1 = contentbeats[atracknum1]
-    atracknum2 = random.randrange(0,len(contentbass))
-    atrack2 = contentbass[atracknum2]
-    atracknum3 = random.randrange(0,len(contentgit))
-    atrack3 = contentgit[atracknum3]
+    atracknum2 = random.randrange(0,len(contentgit))
+    atrack2 = contentgit[atracknum2]
+    atracknum3 = random.randrange(0,len(contentbass))
+    atrack3 = contentbass[atracknum3]
     atracknum4 = random.randrange(0,len(contentdrones))
     atrack4 = contentdrones[atracknum4]
     atracknum5 = random.randrange(0,len(contentdrones))
