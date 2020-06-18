@@ -75,7 +75,7 @@ for ctr in range(50):
     try:
         newAudio = AudioSegment.from_wav(atrack)
         
-        newvol = random.randrange(14,18)
+        newvol = random.randrange(18,22)
         newAudio = newAudio - newvol
         newAudio = newAudio.fade_in(10)
         newAudio = newAudio.fade_out(10)
@@ -307,6 +307,7 @@ for ctr in range(30):
         newAudio = newAudio - newvol
         newAudio = newAudio.fade_in(10)
         newAudio = newAudio.fade_out(10)
+
         
         oufil = "C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static\\newsamplebass" + tracknam + str(ctr) + ".wav"
         newAudio.export(oufil, format="wav")
@@ -331,8 +332,15 @@ for ctr in range(150):
         
         newvol = random.randrange(14,18)
         newAudio = newAudio - newvol
+        newAudio = newAudio + newAudio + newAudio + newAudio
         newAudio = newAudio.fade_in(10)
         newAudio = newAudio.fade_out(10)
+
+        sil2 = random.randrange(10000,40000)
+
+        back = AudioSegment.silent(duration = sil2)
+        
+        newAudio = newAudio + back
         
         oufil = "C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static\\newsampleguitar" + tracknam + str(ctr) + ".wav"
         newAudio.export(oufil, format="wav")

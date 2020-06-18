@@ -151,8 +151,8 @@ def make_player():
     atrack5 = contentdrones[atracknum5]
     atracknum6 = random.randrange(0,len(contentdrones))
     atrack6 = contentdrones[atracknum6]
-    atracknum7 = random.randrange(0,len(contentpepper))
-    atrack7 = contentpepper[atracknum7]
+    atracknum7 = random.randrange(0,len(contentdrones))
+    atrack7 = contentdrones[atracknum7]
     atracknum8 = random.randrange(0,len(contentpepper))
     atrack8 = contentpepper[atracknum8]
     atracknum9 = random.randrange(0,len(contentpepper))

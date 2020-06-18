@@ -21,7 +21,7 @@ for subdir, dirs, files in os.walk(srchstr):
         filepath = subdir + os.sep + file
 
 
-        if  filepath.endswith(".wav") and ("Beat" in str(filepath) and "Noise" not in str(filepath) and "OS" not in str(filepath) and "Glitch" not in str(filepath)):
+        if  filepath.endswith(".wav") and ("Beat" in str(filepath) and "Noise" not in str(filepath) and "OS" not in str(filepath) and "Glitch" not in str(filepath) and "Euro" not in str(filepath)):
             contentbeats.append(filepath)
 
         if  filepath.endswith(".wav") and (("Pad" in str(filepath)) or ("Drone" in str(filepath)) and ("Beat" not in str(filepath))) :
@@ -30,7 +30,7 @@ for subdir, dirs, files in os.walk(srchstr):
         if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Jazz" in str(filepath)):
             contentbass.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Guitar" in str(filepath)) and ("MM" not in str(filepath)) and (("World Affairs" in str(filepath)) or ("Hypnotic Vibe" in str(filepath))):
+        if  filepath.endswith(".wav") and ("Guitar" in str(filepath)) and (("World Affairs" in str(filepath)) or (("Hypnotic Vibe" in str(filepath)) and "Oriental" not in  str(filepath))):
             contentgit.append(filepath)
 
         if  filepath.endswith(".wav") and (("Pad" not in str(filepath)) and ("Drone" not in str(filepath)) and ("Beat" not in str(filepath)) and ("Drum" not in str(filepath))and ("Bass" not in str(filepath)) and ("Tone" not in str(filepath)) and ("OS" not in str(filepath)) and ("Signals" not in str(filepath))  and ("Dialog" not in str(filepath)) and ("Spoken" not in str(filepath)) and ("Guitar" not in str(filepath))) :
