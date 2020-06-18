@@ -330,7 +330,7 @@ for ctr in range(150):
     try:
         newAudio = AudioSegment.from_wav(atrack)
         
-        newvol = random.randrange(14,18)
+        newvol = random.randrange(19, 22)
         newAudio = newAudio - newvol
         newAudio = newAudio + newAudio + newAudio + newAudio
         newAudio = newAudio.fade_in(10)
