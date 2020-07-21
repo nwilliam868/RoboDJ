@@ -30,7 +30,7 @@ for subdir, dirs, files in os.walk(srchstr):
         if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Jazz" in str(filepath)):
             contentbass.append(filepath)
 
-        if  filepath.endswith(".wav") and (("Guitar" in str(filepath)) and (("Dub Tales" in str(filepath))) or (("Guitar" in str(filepath)) and "Reggae" in str(filepath))) or (("Guitar" in str(filepath)) and (("African Sun" in str(filepath))) :
+        if  filepath.endswith(".wav") and ("Guitar" in str(filepath) and "Dub Tales" in str(filepath)) or ("Guitar" in str(filepath) and "Reggae" in str(filepath)) or ("Guitar" in str(filepath) and "African Sun" in str(filepath)) :
             contentgit.append(filepath)
 
         if  filepath.endswith(".wav") and (("Pad" not in str(filepath)) and ("Drone" not in str(filepath)) and ("Beat" not in str(filepath)) and ("Drum" not in str(filepath))and ("Bass" not in str(filepath)) and ("Tone" not in str(filepath)) and ("OS" not in str(filepath)) and ("Signals" not in str(filepath))  and ("Dialog" not in str(filepath)) and ("Spoken" not in str(filepath)) and ("Guitar" not in str(filepath))) :
