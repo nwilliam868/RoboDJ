@@ -23,7 +23,7 @@ def make_player():
 
     outfile = open('AutoPlayListBeats.m3u', "w")
 
-    for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static'):
+    for subdir, dirs, files in os.walk('C:\\Users\\mysti\\Coding\\RoboDJ\\static'):
         for file in files:
             filepath = subdir + os.sep + file
 
@@ -36,7 +36,7 @@ def make_player():
 
     outfile = open('AutoPlayListDrones.m3u', "w")
 
-    for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static'):
+    for subdir, dirs, files in os.walk('C:\\Users\\mysti\\Coding\\RoboDJ\\static'):
         for file in files:
             filepath = subdir + os.sep + file
 
@@ -50,7 +50,7 @@ def make_player():
 
     outfile = open('AutoPlayListPepper.m3u', "w")
 
-    for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static'):
+    for subdir, dirs, files in os.walk('C:\\Users\\mysti\\Coding\\RoboDJ\\static'):
         for file in files:
             filepath = subdir + os.sep + file
 
@@ -63,7 +63,7 @@ def make_player():
 
     outfile = open('AutoPlayListBass.m3u', "w")
 
-    for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static'):
+    for subdir, dirs, files in os.walk('C:\\Users\\mysti\\Coding\\RoboDJ\\static'):
         for file in files:
             filepath = subdir + os.sep + file
 
@@ -76,7 +76,7 @@ def make_player():
 
     outfile = open('AutoPlayListGit.m3u', "w")
 
-    for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static'):
+    for subdir, dirs, files in os.walk('C:\\Users\\mysti\\Coding\\RoboDJ\\static'):
         for file in files:
             filepath = subdir + os.sep + file
 

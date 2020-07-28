@@ -7,7 +7,7 @@ from subprocess import call
 
 contentbeats = []
 
-for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\'):
+for subdir, dirs, files in os.walk('C:\\Users\\mysti\\Coding\RoboDJ\\'):
     for file in files:
         filepath = subdir + os.sep + file
 
@@ -17,7 +17,7 @@ for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\R
 
 contentdrones = []
 
-for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\'):
+for subdir, dirs, files in os.walk('C:\\Users\\mysti\\Coding\RoboDJ\\'):
     for file in files:
         filepath = subdir + os.sep + file
 
@@ -27,7 +27,7 @@ for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\R
 
 contentpepper = []
 
-for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\'):
+for subdir, dirs, files in os.walk('C:\\Users\\mysti\\Coding\RoboDJ\\'):
     for file in files:
         filepath = subdir + os.sep + file
 
@@ -37,7 +37,7 @@ for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\R
 
 contentbass = []
 
-for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\'):
+for subdir, dirs, files in os.walk('C:\\Users\\mysti\\Coding\RoboDJ\\'):
     for file in files:
         filepath = subdir + os.sep + file
 
@@ -47,7 +47,7 @@ for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\R
 
 contentgit = []
 
-for subdir, dirs, files in os.walk('C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\'):
+for subdir, dirs, files in os.walk('C:\\Users\\mysti\\Coding\RoboDJ\\'):
     for file in files:
         filepath = subdir + os.sep + file
 
@@ -80,7 +80,7 @@ for ctr in range(50):
         newAudio = newAudio.fade_in(10)
         newAudio = newAudio.fade_out(10)
         
-        oufil = "C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static\\newsamplebeat" + tracknam + str(ctr) + ".wav"
+        oufil = "C:\\Users\\mysti\\Coding\RoboDJ\\static\\newsamplebeat" + tracknam + str(ctr) + ".wav"
         newAudio.export(oufil, format="wav")
     except:
         print("File unreadable.")
@@ -181,7 +181,7 @@ for ctr in range(150):
             front = AudioSegment.silent(duration = sil1)
             back = AudioSegment.silent(duration = sil2)
             newAudio = front + newAudio + back
-        oufil = "C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static\\newsampledrone" + tracknam + str(ctr) + ".wav"
+        oufil = "C:\\Users\\mysti\\Coding\RoboDJ\\static\\newsampledrone" + tracknam + str(ctr) + ".wav"
         newAudio.export(oufil, format="wav")
     except:
         print("File unreadable.")
@@ -282,7 +282,7 @@ for ctr in range(250):
             front = AudioSegment.silent(duration = sil1)
             back = AudioSegment.silent(duration = sil2)
             newAudio = front + newAudio + back
-        oufil = "C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static\\newsamplepepper" + tracknam + str(ctr) + ".wav"
+        oufil = "C:\\Users\\mysti\\Coding\RoboDJ\\static\\newsamplepepper" + tracknam + str(ctr) + ".wav"
         newAudio.export(oufil, format="wav")
     except:
         print("File unreadable.")
@@ -309,7 +309,7 @@ for ctr in range(30):
         newAudio = newAudio.fade_out(10)
 
         
-        oufil = "C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static\\newsamplebass" + tracknam + str(ctr) + ".wav"
+        oufil = "C:\\Users\\mysti\\Coding\RoboDJ\\static\\newsamplebass" + tracknam + str(ctr) + ".wav"
         newAudio.export(oufil, format="wav")
     except:
         print("File unreadable.")
@@ -342,7 +342,7 @@ for ctr in range(150):
         
         newAudio = newAudio + back
         
-        oufil = "C:\\Users\\mysti\\thomasoriginalcode\\Git\\RoboDJ\\static\\newsampleguitar" + tracknam + str(ctr) + ".wav"
+        oufil = "C:\\Users\\mysti\\Coding\RoboDJ\\static\\newsampleguitar" + tracknam + str(ctr) + ".wav"
         newAudio.export(oufil, format="wav")
     except:
         print("File unreadable.")
