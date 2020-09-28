@@ -172,9 +172,9 @@ def make_player():
     atracknum16 = random.randrange(0,len(contentpepper))
     atrack16 = contentpepper[atracknum16]
     atracknum17 = random.randrange(0,len(contentpepper))
-    atrack17 = contentpepper[atracknum1]
+    atrack17 = contentpepper[atracknum17]
     atracknum18 = random.randrange(0,len(contentpepper))
-    atrack18 = contentpepper[atracknum1]
+    atrack18 = contentpepper[atracknum18]
 
     return render_template('reanimate.html', toplay1 = atrack1, toplay2 = atrack2, toplay3 = atrack3, toplay4 = atrack4, toplay5 = atrack5, toplay6 = atrack6, toplay7 = atrack7, toplay8 = atrack8, toplay9 = atrack9, toplay10 = atrack10, toplay11 = atrack11, toplay12 = atrack12, toplay13 = atrack13, toplay14 = atrack14, toplay15 = atrack15,  toplay16 = atrack16, toplay17 = atrack17, toplay18 = atrack18, songlen = songlength )
 
