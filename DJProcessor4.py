@@ -340,7 +340,7 @@ for ctr in range(150):
     try:
         newAudio = AudioSegment.from_wav(atrack)
         
-        newvol = random.randrange(19, 22)
+        newvol = random.randrange(22, 26)
         newAudio = newAudio - newvol
         newAudio = newAudio + newAudio + newAudio + newAudio
         newAudio = newAudio.fade_in(10)
@@ -362,8 +362,8 @@ for ctr in range(100):
     astr = ("Saxophone Sample: " + str(ctr + 1))
     print(astr)
         
-    songch = random.randrange(0,len(contentorg))
-    atrack = contentorg[songch]
+    songch = random.randrange(0,len(contentsax))
+    atrack = contentsax[songch]
     trackname = atrack[-16:]
     tracknam = ""
     for x in trackname:
@@ -373,7 +373,7 @@ for ctr in range(100):
     try:
         newAudio = AudioSegment.from_wav(atrack)
         
-        newvol = random.randrange(24, 28)
+        newvol = random.randrange(27, 29)
         newAudio = newAudio - newvol
         newAudio = newAudio + newAudio + newAudio
         newAudio = newAudio.fade_in(10)
