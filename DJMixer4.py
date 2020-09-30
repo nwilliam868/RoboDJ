@@ -74,13 +74,13 @@ def make_player():
 
     outfile.close()
 
-    outfile = open('AutoPlayListGit.m3u', "w")
+    outfile = open('AutoPlayListOrgan.m3u', "w")
 
     for subdir, dirs, files in os.walk('C:\\Users\\mysti\\Coding\\RoboDJ\\static'):
         for file in files:
             filepath = subdir + os.sep + file
 
-            if (filepath.endswith(".mp3") or filepath.endswith(".wav") or filepath.endswith(".ogg")) and "guitar" in str(filepath):
+            if (filepath.endswith(".mp3") or filepath.endswith(".wav") or filepath.endswith(".ogg")) and "organ" in str(filepath):
                 cline = str(os.sep + file)
                 bline = "\static" + cline
                 outfile.write(bline + '\n')
