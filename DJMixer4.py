@@ -100,7 +100,7 @@ def make_player():
 
     outfile.close()
 
-        outfile = open('AutoPlayListGit.m3u', "w")
+    outfile = open('AutoPlayListGit.m3u', "w")
 
     for subdir, dirs, files in os.walk('C:\\Users\\mysti\\Coding\\RoboDJ\\static'):
         for file in files:
