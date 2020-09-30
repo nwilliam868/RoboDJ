@@ -16,6 +16,7 @@ contentpepper = []
 contentbass = []
 contentorg = []
 contentsax = []
+contentgit = []
 
 for subdir, dirs, files in os.walk(srchstr):
     for file in files:
@@ -36,6 +37,9 @@ for subdir, dirs, files in os.walk(srchstr):
 
         if  filepath.endswith(".wav") and ("Sax" in str(filepath)) :
             contentsax.append(filepath)
+
+        if  filepath.endswith(".wav") and ("Guitar" in str(filepath) and "Dub Tales" in str(filepath)) or ("Guitar" in str(filepath) and "Reggae" in str(filepath)) or ("Guitar" in str(filepath) and "African Sun" in str(filepath)) :
+            contentgit.append(filepath)
 
         if  filepath.endswith(".wav") and (("Pad" not in str(filepath)) and ("Drone" not in str(filepath)) and ("Beat" not in str(filepath)) and ("Drum" not in str(filepath))and ("Bass" not in str(filepath)) and ("Tone" not in str(filepath)) and ("OS" not in str(filepath)) and ("Signals" not in str(filepath))  and ("Dialog" not in str(filepath)) and ("Spoken" not in str(filepath)) and ("Guitar" not in str(filepath))) :
             contentpepper.append(filepath)
@@ -121,6 +125,19 @@ for ctr in range(100):
             tracknam += m
     outstr = 'C:\\Users\\mysti\\Coding\\RoboDJ\\newsoundsaxophone' + str(ctr) + tracknam + ".wav"
     shutil.copy(contentsax[y], outstr)
+
+x = len(contentgit)
+
+for ctr in range(100):
+    y = random.randrange(x)
+    atrack = contentgit[y]
+    trackname = atrack[-20:-4]
+    tracknam = ""
+    for m in trackname:
+        if m.isalnum():
+            tracknam += m
+    outstr = 'C:\\Users\\mysti\\Coding\\RoboDJ\\newsoundguitar' + str(ctr) + tracknam + ".wav"
+    shutil.copy(contentgit[y], outstr)
 
 call(["python", "DJProcessor4.py"])
 

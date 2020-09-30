@@ -100,6 +100,19 @@ def make_player():
 
     outfile.close()
 
+        outfile = open('AutoPlayListGit.m3u', "w")
+
+    for subdir, dirs, files in os.walk('C:\\Users\\mysti\\Coding\\RoboDJ\\static'):
+        for file in files:
+            filepath = subdir + os.sep + file
+
+            if (filepath.endswith(".mp3") or filepath.endswith(".wav") or filepath.endswith(".ogg")) and "guitar" in str(filepath):
+                cline = str(os.sep + file)
+                bline = "\static" + cline
+                outfile.write(bline + '\n')
+
+    outfile.close()
+
     songlength = random.randrange(500, 600)
 
     infile = open("AutoPlayListBeats.m3u", "r")
@@ -162,6 +175,16 @@ def make_player():
         plist = infile.readline()
     infile.close()
 
+    infile = open("AutoPlayListGit.m3u", "r")
+   
+    contentgit = []
+
+    plist = infile.readline()
+    while plist:
+        contentgit.append(plist)
+        plist = infile.readline()
+    infile.close()
+
     atracknum1 = random.randrange(0,len(contentbeats))
     atrack1 = contentbeats[atracknum1]
     atracknum2 = random.randrange(0,len(contentorg))
@@ -194,8 +217,8 @@ def make_player():
     atrack15 = contentpepper[atracknum15]
     atracknum16 = random.randrange(0,len(contentpepper))
     atrack16 = contentpepper[atracknum16]
-    atracknum17 = random.randrange(0,len(contentpepper))
-    atrack17 = contentpepper[atracknum17]
+    atracknum17 = random.randrange(0,len(contentgit))
+    atrack17 = contentgit[atracknum17]
     atracknum18 = random.randrange(0,len(contentsax))
     atrack18 = contentsax[atracknum18]
 
