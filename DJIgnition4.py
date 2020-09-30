@@ -22,7 +22,7 @@ for subdir, dirs, files in os.walk(srchstr):
         filepath = subdir + os.sep + file
 
 
-        if  filepath.endswith(".wav") and ("Beat" in str(filepath) and "Jazz" in str(filepath) and "Noise" not in str(filepath) and "OS" not in str(filepath) and "Blip" not in str(filepath) and "Euro" not in str(filepath)):
+        if  filepath.endswith(".wav") and ("Drums" in str(filepath) and "Jazz" in str(filepath) and "Noise" not in str(filepath) and "OS" not in str(filepath) and "Blip" not in str(filepath) and "Euro" not in str(filepath)):
             contentbeats.append(filepath)
 
         if  filepath.endswith(".wav") and (("Pad" in str(filepath)) or ("Drone" in str(filepath)) and ("Beat" not in str(filepath))) :
@@ -113,7 +113,7 @@ x = len(contentsax)
 
 for ctr in range(100):
     y = random.randrange(x)
-    atrack = contentorg[y]
+    atrack = contentsax[y]
     trackname = atrack[-20:-4]
     tracknam = ""
     for m in trackname:
