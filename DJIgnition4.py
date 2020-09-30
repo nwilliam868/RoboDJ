@@ -15,6 +15,7 @@ contentdrones = []
 contentpepper = []
 contentbass = []
 contentorg = []
+contentsax = []
 
 for subdir, dirs, files in os.walk(srchstr):
     for file in files:
@@ -33,7 +34,10 @@ for subdir, dirs, files in os.walk(srchstr):
         if  filepath.endswith(".wav") and ("Organ" in str(filepath)) :
             contentorg.append(filepath)
 
-        if  filepath.endswith(".wav") and (("Pad" not in str(filepath)) and ("Drone" not in str(filepath)) and ("Beat" not in str(filepath)) and ("Drum" not in str(filepath))and ("Bass" not in str(filepath)) and ("Tone" not in str(filepath)) and ("OS" not in str(filepath)) and ("Signals" not in str(filepath))  and ("Dialog" not in str(filepath)) and ("Spoken" not in str(filepath)) and ("organ" not in str(filepath))) :
+        if  filepath.endswith(".wav") and ("Sax" in str(filepath)) :
+            contentsax.append(filepath)
+
+        if  filepath.endswith(".wav") and (("Pad" not in str(filepath)) and ("Drone" not in str(filepath)) and ("Beat" not in str(filepath)) and ("Drum" not in str(filepath))and ("Bass" not in str(filepath)) and ("Tone" not in str(filepath)) and ("OS" not in str(filepath)) and ("Signals" not in str(filepath))  and ("Dialog" not in str(filepath)) and ("Spoken" not in str(filepath)) and ("Guitar" not in str(filepath))) :
             contentpepper.append(filepath)
 
 print("")
@@ -102,9 +106,22 @@ for ctr in range(100):
     for m in trackname:
         if m.isalnum():
             tracknam += m
-    outstr = 'C:\\Users\\mysti\\Coding\\RoboDJ\\newsoundorgan' + str(ctr) + tracknam + ".wav"
+    outstr = 'C:\\Users\\mysti\\Coding\\RoboDJ\\newsoundgorgan' + str(ctr) + tracknam + ".wav"
     shutil.copy(contentorg[y], outstr)
 
-call(["python", "DJProcessor3.py"])
+x = len(contentsax)
+
+for ctr in range(100):
+    y = random.randrange(x)
+    atrack = contentorg[y]
+    trackname = atrack[-20:-4]
+    tracknam = ""
+    for m in trackname:
+        if m.isalnum():
+            tracknam += m
+    outstr = 'C:\\Users\\mysti\\Coding\\RoboDJ\\newsoundsaxophone' + str(ctr) + tracknam + ".wav"
+    shutil.copy(contentsax[y], outstr)
+
+call(["python", "DJProcessor4.py"])
 
 ## THE GHOST OF THE SHADOW ##
