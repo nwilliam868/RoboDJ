@@ -23,22 +23,22 @@ for subdir, dirs, files in os.walk(srchstr):
         filepath = subdir + os.sep + file
 
 
-        if  filepath.endswith(".wav") and (("Hop" in str(filepath)) or  ("Dub" in str(filepath)))  and "Drums" in str(filepath)) :
+        if  filepath.endswith(".wav") and (("Hop" in str(filepath)) or  ("Dub" in str(filepath)))  and "Drums" in str(filepath) 
             contentbeats.append(filepath)
 
-        if  filepath.endswith(".wav") and (("Reggae" in str(filepath)) or  ("Dub" in str(filepath)))  and "Pads" in str(filepath)) :
+        if  filepath.endswith(".wav") and (("Reggae" in str(filepath)) or  ("Dub" in str(filepath)))  and "Pads" in str(filepath) :
             contentdrones.append(filepath)
 
-        if  filepath.endswith(".wav")  and (("Reggae" in str(filepath)) or  ("Dub" in str(filepath)))  and "Bass" in str(filepath)) :
+        if  filepath.endswith(".wav")  and (("Reggae" in str(filepath)) or  ("Dub" in str(filepath)))  and "Bass" in str(filepath) :
             contentbass.append(filepath)
 
-        if  filepath.endswith(".wav") and (("Reggae" in str(filepath)) or  ("Dub" in str(filepath)))  and "Keys" in str(filepath)) :
+        if  filepath.endswith(".wav") and (("Reggae" in str(filepath)) or  ("Dub" in str(filepath)))  and "Keys" in str(filepath) :
             contentorg.append(filepath)
 
-        if  filepath.endswith(".wav") and (("Reggae" in str(filepath)) or  ("Dub" in str(filepath)))  and "Brass" in str(filepath)) :
+        if  filepath.endswith(".wav") and (("Reggae" in str(filepath)) or  ("Dub" in str(filepath)))  and "Brass" in str(filepath) :
             contentsax.append(filepath)
 
-        if  filepath.endswith(".wav") and (("Reggae" in str(filepath)) or  ("Dub" in str(filepath))) and "Synth" in str(filepath)) :
+        if  filepath.endswith(".wav") and (("Reggae" in str(filepath)) or  ("Dub" in str(filepath))) and "Synth" in str(filepath) :
             contentgit.append(filepath)
 
         if  filepath.endswith(".wav") and (("Pad" not in str(filepath)) and ("Drone" not in str(filepath)) and ("Beat" not in str(filepath)) and ("Drum" not in str(filepath))and ("Bass" not in str(filepath)) and ("Tone" not in str(filepath)) and ("OS" not in str(filepath)) and ("Signals" not in str(filepath))  and ("Dialog" not in str(filepath)) and ("Spoken" not in str(filepath)) and ("Guitar" not in str(filepath))) :
