@@ -356,7 +356,7 @@ for ctr in range(150):
         newAudio = newAudio.fade_in(10)
         newAudio = newAudio.fade_out(10)
 
-        sil2 = random.randrange(10000,40000)
+        sil2 = random.randrange(25000,54000)
 
         back = AudioSegment.silent(duration = sil2)
         
