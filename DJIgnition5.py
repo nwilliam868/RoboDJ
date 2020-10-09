@@ -35,7 +35,7 @@ for subdir, dirs, files in os.walk(srchstr):
         if  filepath.endswith(".wav") and ("String" in str(filepath)) and ("Modern" not in str(filepath)):
             contentorg.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Dum" in str(filepath)) or ("Conga" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Marimba" in str(filepath)) or ("Conga" in str(filepath)) :
             contentsax.append(filepath)
 
         if  filepath.endswith(".wav") and (("Guitar" in str(filepath)) and ("Jazz" in str(filepath))) or (("Guitar" in str(filepath)) and ("Easy" in str(filepath))) or (("Guitar" in str(filepath)) and ("Africa" in str(filepath))) :
