@@ -35,13 +35,13 @@ for subdir, dirs, files in os.walk(srchstr):
         if  filepath.endswith(".wav") and ("String" in str(filepath)) and ("Modern" not in str(filepath)):
             contentorg.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Conga" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Dum" in str(filepath)) or ("Conga" in str(filepath)) :
             contentsax.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Guitar" in str(filepath) and "Jazz" in str(filepath)) or ("Guitar" in str(filepath) and "Easy" in str(filepath)) or ("Guitar" in str(filepath) and "Africa" in str(filepath)) :
+        if  filepath.endswith(".wav") and (("Guitar" in str(filepath)) and ("Jazz" in str(filepath))) or (("Guitar" in str(filepath)) and ("Easy" in str(filepath))) or (("Guitar" in str(filepath)) and ("Africa" in str(filepath))) :
             contentgit.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Tribal" in str(filepath)) and ((("Pad" not in str(filepath)) and ("Drone" not in str(filepath)) and ("Beat" not in str(filepath)) and ("Drum" not in str(filepath))and ("Bass" not in str(filepath)) and ("Tone" not in str(filepath)) and ("OS" not in str(filepath)) and ("Signals" not in str(filepath))  and ("Dialog" not in str(filepath)) and ("Spoken" not in str(filepath)) and ("Guitar" not in str(filepath)))) :
+        if  filepath.endswith(".wav") and ("Trib" in str(filepath)) and ((("Pad" not in str(filepath)) and ("Drone" not in str(filepath)) and ("Beat" not in str(filepath)) and ("Drum" not in str(filepath))and ("Bass" not in str(filepath)) and ("Tone" not in str(filepath)) and ("OS" not in str(filepath)) and ("Signals" not in str(filepath))  and ("Dialog" not in str(filepath)) and ("Spoken" not in str(filepath)) and ("Guitar" not in str(filepath)))) :
             contentpepper.append(filepath)
 
 print("")
