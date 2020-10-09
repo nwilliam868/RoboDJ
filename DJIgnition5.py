@@ -29,7 +29,7 @@ for subdir, dirs, files in os.walk(srchstr):
         if  filepath.endswith(".wav") and (("Pad" in str(filepath)) or ("Drone" in str(filepath)) and ("Beat" not in str(filepath))) :
             contentdrones.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Jazz" in str(filepath)) and ("Walking" in str(filepath)) :
+        if  filepath.endswith(".wav") and ("Bass" in str(filepath)) and ("Jazz" in str(filepath)) and ("Walk" in str(filepath)) :
             contentbass.append(filepath)
 
         if  filepath.endswith(".wav") and ("String" in str(filepath)) and ("Modern" not in str(filepath)):
