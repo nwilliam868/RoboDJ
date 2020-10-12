@@ -119,16 +119,6 @@ def make_player():
         plist = infile.readline()
     infile.close()
 
-    infile = open("AutoPlayListBass.m3u", "r")
-   
-    contentbass = []
-
-    plist = infile.readline()
-    while plist:
-        contentbass.append(plist)
-        plist = infile.readline()
-    infile.close()
-
     infile = open("AutoPlayListOrgan.m3u", "r")
    
     contentorg = []
@@ -142,9 +132,9 @@ def make_player():
     atracknum1 = random.randrange(0,len(contentbeats))
     atrack1 = contentbeats[atracknum1]
     atracknum2 = random.randrange(0,len(contentorg))
-    atrack2 = contentorgan[atracknum2]
-    atracknum3 = random.randrange(0,len(contentbass))
-    atrack3 = contentbass[atracknum3]
+    atrack2 = contentorg[atracknum2]
+    atracknum3 = random.randrange(0,len(contentpepper))
+    atrack3 = contentpepper[atracknum3]
     atracknum4 = random.randrange(0,len(contentdrones))
     atrack4 = contentdrones[atracknum4]
     atracknum5 = random.randrange(0,len(contentdrones))

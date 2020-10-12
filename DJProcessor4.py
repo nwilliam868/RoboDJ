@@ -92,19 +92,42 @@ for ctr in range(50):
         if x.isalnum():
             tracknam += x
 
+    bstr = ("Bass Sample: " + str(ctr + 1))
+    print(bstr)
+        
+    songchb = random.randrange(0,len(contentbass))
+    btrack = contentbass[songchb]
+    tracknameb = btrack[-16:]
+    tracknamb = ""
+    for x1 in tracknameb:
+        if x.isalnum():
+            tracknamb += x
+
     try:
+
         newAudio = AudioSegment.from_wav(atrack)
         
-        newvol = random.randrange(18,22)
+        newvol = random.randrange(14,18)
         newAudio = newAudio - newvol
         newAudio = newAudio.fade_in(10)
         newAudio = newAudio.fade_out(10)
 
-        newAudio = newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio
+        newAudiob = AudioSegment.from_wav(btrack)
         
-        
+        newvolb = random.randrange(18,22)
+        newAudiob = newAudiob - newvolb
+        newAudiob = newAudiob.fade_in(10)
+        newAudiob = newAudiob.fade_out(10)
+
+        newAudioc = newAudio.overlay(newAudiob)
+        print ("overlaying recording")
+
+        for cotr in range(7):
+
+            newAudioc = newAudioc + newAudioc 
+
         oufil = "C:\\Users\\mysti\\Coding\RoboDJ\\static\\newsamplebeat" + tracknam + str(ctr) + ".wav"
-        newAudio.export(oufil, format="wav")
+        newAudioc.export(oufil, format="wav")
     except:
         print("File unreadable.")
 
@@ -308,35 +331,7 @@ for ctr in range(250):
         oufil = "C:\\Users\\mysti\\Coding\RoboDJ\\static\\newsamplepepper" + tracknam + str(ctr) + ".wav"
         newAudio.export(oufil, format="wav")
     except:
-        print("File unreadable.")
-
-for ctr in range(30):
-
-    astr = ("Bass Sample: " + str(ctr + 1))
-    print(astr)
-        
-    songch = random.randrange(0,len(contentbass))
-    atrack = contentbass[songch]
-    trackname = atrack[-16:]
-    tracknam = ""
-    for x in trackname:
-        if x.isalnum():
-            tracknam += x
-
-    try:
-        newAudio = AudioSegment.from_wav(atrack)
-        
-        newvol = random.randrange(14,18)
-        newAudio = newAudio - newvol
-        newAudio = newAudio.fade_in(10)
-        newAudio = newAudio.fade_out(10)
-
-        newAudio = newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio       
-        
-        oufil = "C:\\Users\\mysti\\Coding\RoboDJ\\static\\newsamplebass" + tracknam + str(ctr) + ".wav"
-        newAudio.export(oufil, format="wav")
-    except:
-        print("File unreadable.")
+        print("File unreadable.") 
 
 for ctr in range(150):
 
