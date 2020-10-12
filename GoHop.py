@@ -1,6 +1,6 @@
 
 from subprocess import call
 
-call(["python", "DJIgnition6.py"])
+call(["python", "DJIgnitionHip.py"])
 
 ## THE GHOST OF THE SHADOW ##

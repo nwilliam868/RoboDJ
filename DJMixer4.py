@@ -113,7 +113,7 @@ def make_player():
 
     outfile.close()
 
-    songlength = random.randrange(500, 600)
+    songlength = random.randrange(300, 400)
 
     infile = open("AutoPlayListBeats.m3u", "r")
    
