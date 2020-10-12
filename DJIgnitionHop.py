@@ -23,7 +23,7 @@ for subdir, dirs, files in os.walk(srchstr):
         filepath = subdir + os.sep + file
 
 
-        if  filepath.endswith(".wav") and ("Beats" in str(filepath) and "Street" in str(filepath) and "Noise" not in str(filepath) and "OS" not in str(filepath) and "Blip" not in str(filepath) and "Euro" not in str(filepath)):
+        if  filepath.endswith(".wav") and ("Beats" in str(filepath) and "Hip" in str(filepath) and "Noise" not in str(filepath) and "OS" not in str(filepath) and "Blip" not in str(filepath) and "Euro" not in str(filepath)):
             contentbeats.append(filepath)
 
         if  filepath.endswith(".wav") and (("Drone" in str(filepath)) and ("Beat" not in str(filepath))) :
