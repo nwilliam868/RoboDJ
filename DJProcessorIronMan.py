@@ -104,14 +104,6 @@ for ctr in range(50):
             tracknamb += x
 
     try:
-        newAudio = AudioSegment.from_wav(atrack)
-        
-        newvol = random.randrange(14,18)
-        newAudio = newAudio - newvol
-        newAudio = newAudio.fade_in(10)
-        newAudio = newAudio.fade_out(10)
-
-    try:
 
         newAudio = AudioSegment.from_wav(atrack)
         
