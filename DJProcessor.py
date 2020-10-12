@@ -77,11 +77,6 @@ for ctr in range(50):
         
     songchb = random.randrange(0,len(contentbass))
     btrack = contentbass[songchb]
-    tracknameb = btrack[-16:]
-    tracknamb = ""
-    for x1 in tracknameb:
-        if x.isalnum():
-            tracknamb += x
 
     try:
 

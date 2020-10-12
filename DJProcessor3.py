@@ -59,6 +59,7 @@ print("Extracting samples. Please wait.")
 
 print("")
 
+
 for ctr in range(50):
 
     astr = ("Beat Sample: " + str(ctr + 1))
@@ -77,11 +78,13 @@ for ctr in range(50):
         
     songchb = random.randrange(0,len(contentbass))
     btrack = contentbass[songchb]
-    tracknameb = btrack[-16:]
-    tracknamb = ""
-    for x1 in tracknameb:
-        if x.isalnum():
-            tracknamb += x
+
+
+    cstr = ("Organ Sample: " + str(ctr + 1))
+    print(cstr)
+        
+    songchc = random.randrange(0,len(contentorg))
+    ctrack = contentorg[songchc]        
 
     try:
 
@@ -99,8 +102,28 @@ for ctr in range(50):
         newAudiob = newAudiob.fade_in(10)
         newAudiob = newAudiob.fade_out(10)
 
-        newAudioc = newAudio.overlay(newAudiob)
+        newAudioc = AudioSegment.from_wav(ctrack)
+        
+        newvolc = random.randrange(18,22)
+        newAudioc = newAudioc - newvolc
+        newAudioc = newAudioc.fade_in(10)
+        newAudioc = newAudioc.fade_out(10)
+
+        newAudiod = newAudio.overlay(newAudiob)
         print ("overlaying recording")
+
+        newAudioe = newAudiod + newAudiod + newAudiod + newAudiod 
+
+        newAudiof = newAudioe.overlay(newAudioc)
+
+        for cotr in range(7):
+
+            newAudiof = newAudiof + newAudiof
+
+        oufil = "C:\\Users\\mysti\\Coding\RoboDJ\\static\\newsamplebeat" + tracknam + str(ctr) + ".wav"
+        newAudiof.export(oufil, format="wav")
+    except:
+        print("File unreadable.")
 
         for cotr in range(7):
 
