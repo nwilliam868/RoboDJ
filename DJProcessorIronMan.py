@@ -137,10 +137,10 @@ for ctr in range(50):
 
         for cotr in range(7):
 
-            newAudiog = newAudiof + newAudiof
+            newAudiof = newAudiof + newAudiof
 
         oufil = "C:\\Users\\mysti\\Coding\RoboDJ\\static\\newsamplebeat" + tracknam + str(ctr) + ".wav"
-        newAudiog.export(oufil, format="wav")
+        newAudiof.export(oufil, format="wav")
     except:
         print("File unreadable.")
 
