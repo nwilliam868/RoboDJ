@@ -87,7 +87,7 @@ def make_player():
 
     outfile.close()
 
-    songlength = random.randrange(500, 600)
+    songlength = random.randrange(250, 340)
 
     infile = open("AutoPlayListBeats.m3u", "r")
    
@@ -142,7 +142,7 @@ def make_player():
     atracknum1 = random.randrange(0,len(contentbeats))
     atrack1 = contentbeats[atracknum1]
     atracknum2 = random.randrange(0,len(contentorg))
-    atrack2 = contentOrgan[atracknum2]
+    atrack2 = contentorgan[atracknum2]
     atracknum3 = random.randrange(0,len(contentbass))
     atrack3 = contentbass[atracknum3]
     atracknum4 = random.randrange(0,len(contentdrones))
