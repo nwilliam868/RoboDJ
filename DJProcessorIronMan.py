@@ -122,10 +122,12 @@ for ctr in range(50):
         newAudioc = newAudio.overlay(newAudiob)
         print ("overlaying recording")
 
-        newAudio = newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio + newAudio
+        for cotr in range(7):
+
+            newAudioc = newAudioc + newAudioc 
 
         oufil = "C:\\Users\\mysti\\Coding\RoboDJ\\static\\newsamplebeat" + tracknam + str(ctr) + ".wav"
-        newAudio.export(oufil, format="wav")
+        newAudioc.export(oufil, format="wav")
     except:
         print("File unreadable.")
 
