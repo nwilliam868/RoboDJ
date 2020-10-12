@@ -139,6 +139,6 @@ for ctr in range(100):
     outstr = 'C:\\Users\\mysti\\Coding\\RoboDJ\\newsoundguitar' + str(ctr) + tracknam + ".wav"
     shutil.copy(contentgit[y], outstr)
 
-call(["python", "DJProcessorStark.py"])
+call(["python", "DJProcessorIronMan.py"])
 
 ## THE GHOST OF THE SHADOW ##
