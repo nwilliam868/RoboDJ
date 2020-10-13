@@ -135,7 +135,7 @@ for ctr in range(50):
 
         newAudiof = newAudioe.overlay(newAudioc)
 
-        for cotr in range(7):
+        for cotr in range(6):
 
             newAudiof = newAudiof + newAudiof
 

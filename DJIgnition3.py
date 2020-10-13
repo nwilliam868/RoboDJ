@@ -105,6 +105,6 @@ for ctr in range(100):
     outstr = 'C:\\Users\\mysti\\Coding\\RoboDJ\\newsoundorgan' + str(ctr) + tracknam + ".wav"
     shutil.copy(contentorg[y], outstr)
 
-call(["python", "DJProcessor3.py"])
+call(["python", "DJProcessorIronMan.py"])
 
 ## THE GHOST OF THE SHADOW ##

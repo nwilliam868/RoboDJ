@@ -78,6 +78,13 @@ for ctr in range(50):
     songchb = random.randrange(0,len(contentbass))
     btrack = contentbass[songchb]
 
+
+    cstr = ("Drone Sample: " + str(ctr + 1))
+    print(cstr)
+        
+    songchc = random.randrange(0,len(contentdrones))
+    ctrack = contentdrones[songchc]        
+
     try:
 
         newAudio = AudioSegment.from_wav(atrack)
@@ -94,18 +101,29 @@ for ctr in range(50):
         newAudiob = newAudiob.fade_in(10)
         newAudiob = newAudiob.fade_out(10)
 
-        newAudioc = newAudio.overlay(newAudiob)
+        newAudioc = AudioSegment.from_wav(ctrack)
+        
+        newvolc = random.randrange(18,22)
+        newAudioc = newAudioc - newvolc
+        newAudioc = newAudioc.fade_in(10)
+        newAudioc = newAudioc.fade_out(10)
+
+        newAudiod = newAudio.overlay(newAudiob)
         print ("overlaying recording")
 
-        for cotr in range(7):
+        newAudioe = newAudiod + newAudiod + newAudiod + newAudiod 
 
-            newAudioc = newAudioc + newAudioc 
+        newAudiof = newAudioe.overlay(newAudioc)
+
+        for cotr in range(6):
+
+            newAudiof = newAudiof + newAudiof
 
         oufil = "C:\\Users\\mysti\\Coding\RoboDJ\\static\\newsamplebeat" + tracknam + str(ctr) + ".wav"
-        newAudioc.export(oufil, format="wav")
+        newAudiof.export(oufil, format="wav")
     except:
         print("File unreadable.")
-      
+
 for ctr in range(150):
 
     astr = ("Drone Sample: " + str(ctr + 1))
