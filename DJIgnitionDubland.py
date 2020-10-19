@@ -38,7 +38,7 @@ for subdir, dirs, files in os.walk(srchstr):
         if  filepath.endswith(".wav") and ("Keys" in str(filepath)) and ("Dubland" in str(filepath))  :
             contentsax.append(filepath)
 
-        if  filepath.endswith(".wav") and ("Strings" in str(filepath)) and ("Dubland" in str(filepath))  :
+        if  filepath.endswith(".wav") and ("Ambient" in str(filepath)) and ("Dubland" in str(filepath))  :
             contentgit.append(filepath)
 
         if  filepath.endswith(".wav") and (("Ambient" in str(filepath)) or ("FX" in str(filepath))) and ("Dubland" in str(filepath)) :
